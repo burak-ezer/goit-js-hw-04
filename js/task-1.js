@@ -4,11 +4,13 @@ function isEnoughCapacity(products, containerSize) {
     total += product;
   }
 
-  if (total < containerSize) {
-    return true;
+  if (total <= containerSize) {
+    
     console.log(true);
+    return true;
   } else {
-    return false;
+    
     console.log(false);
+    return false;
   }
 }
